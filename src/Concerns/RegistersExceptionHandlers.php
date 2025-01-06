@@ -78,7 +78,7 @@ trait RegistersExceptionHandlers
             throw new ErrorException($message, 0, $level, $file, $line);
         }
     }
-
+use Symfony\Component\ErrorHandler\Error\FatalError;
     /**
      * Reports a deprecation to the "deprecations" logger.
      *
